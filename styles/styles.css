@@ -1,0 +1,689 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+input:active,
+input:hover,
+input:visited,
+input:focus {
+  outline: none;
+}
+
+:root {
+  /* ### Primary */
+  --Very-Dark-Blue: hsl(243, 87%, 12%);
+  --Desaturated-Blue: hsl(238, 22%, 44%);
+
+  /* ### Accent */
+  --Bright-Blue: hsl(224, 93%, 58%);
+  --Moderate-Cyan: hsl(170, 45%, 43%);
+
+  /* ### Neutral */
+  --Light-Grayish-Blue: hsl(240, 75%, 98%);
+  --Light-Gray: hsl(0, 0%, 75%);
+}
+
+body,
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+a,
+button {
+  font-family: "Raleway", sans-serif;
+}
+
+img,
+a,
+span {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input[placeholder],
+[placeholder],
+*[placeholder] {
+  color: #3f3f3f !important;
+}
+
+/* navbar styles */
+
+.navbar,
+.header,
+.main-container,
+.register-container,
+.group-container {
+  width: 84%;
+  min-width: 50%;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 4.6rem 0;
+}
+
+.brand img {
+  width: 11.5rem;
+}
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 3.65rem;
+  margin-left: auto;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.16rem;
+  line-height: 1.5;
+  font-weight: 400;
+  color: inherit;
+}
+
+/* header styles */
+
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.header-content {
+  width: 42rem;
+  padding-top: 1.1rem;
+}
+
+.header-image {
+  width: 40rem;
+  position: relative;
+  left: -3.8rem;
+  top: -1.5rem;
+}
+
+.header-image img {
+  width: 44rem;
+}
+
+.header-title {
+  font-size: 2.8rem;
+  margin-top: 2.5rem;
+  line-height: 1.5;
+}
+
+.header-text {
+  width: 42rem;
+  font-size: 1.32rem;
+  margin-top: 1rem;
+  line-height: 1.3;
+}
+
+.header-form {
+  margin-top: 1.5rem;
+}
+
+.input-email {
+  padding: 1rem 1.2rem;
+  border-radius: 0.2rem;
+  font-size: 0.85rem;
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+.invalidated:invalid .input-email,
+.invalidated:invalid .register-email {
+  outline: 1px solid #dc3545;
+}
+
+.invalidated:invalid .input-info,
+.invalidated:invalid .register-info {
+  display: block;
+}
+
+.input-info,
+.register-info {
+  display: none;
+  color: #dc3545;
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.button-started {
+  width: 13.9rem;
+  margin-left: 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: var(--Bright-Blue);
+  color: white;
+  padding: 1.01rem 0;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+
+.button-started:hover {
+  background-color: rgb(107, 155, 255);
+  cursor: pointer;
+}
+
+/* main styles */
+
+.main {
+  margin-top: 11rem;
+  width: 100%;
+  padding-bottom: 7.35rem;
+  background-color: rgb(248, 248, 254);
+  position: relative;
+}
+
+.main::before {
+  content: "";
+  display: block;
+  background-image: url(../images/bg-curve-desktop.svg);
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: -6rem;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-top: 8.5rem;
+}
+
+.main-images {
+  width: 44rem;
+}
+
+.image-one {
+  display: block;
+  position: relative;
+  top: -0.4rem;
+  right: -0.2rem;
+  width: 37.5rem;
+  margin-left: auto;
+}
+
+.main-content {
+  width: 47rem;
+  position: relative;
+  margin-top: -2.5rem;
+}
+
+.main-title {
+  font-size: 2.78rem;
+  line-height: 1.5;
+  letter-spacing: 0.015rem;
+}
+
+.main-text p {
+  font-size: 1.1rem;
+  margin-top: 1.3rem;
+  line-height: 1.5;
+  width: 37rem;
+}
+
+.main-text:first-of-type {
+  margin-top: 2rem;
+}
+
+.main-link {
+  font-size: 1.1rem;
+  margin-top: 1.3rem;
+  width: 11.5rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--Moderate-Cyan);
+  position: relative;
+  color: var(--Moderate-Cyan) !important;
+}
+
+.main-link:hover {
+  opacity: 0.8;
+}
+
+.main-link::before {
+  content: "";
+  display: block;
+  background-image: url("../images/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  position: absolute;
+  top: 0.1rem;
+  right: 0;
+  width: 18px;
+  height: 18px;
+}
+
+/* testimoni styles */
+
+.testimoni-box {
+  width: 20.6rem;
+  border-radius: 0.25rem;
+  padding: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 2.9rem;
+  background-color: white;
+  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.1);
+}
+
+.testimoni-quotes {
+  width: 1.25rem;
+  height: 1rem;
+  margin-left: 0.1rem;
+}
+
+.testimoni-content {
+  font-size: 0.99rem;
+  line-height: 1.6;
+  margin-top: 0.6rem;
+  letter-spacing: 0.01rem;
+}
+
+.testimoni-profile {
+  display: flex;
+  align-items: center;
+  margin-top: 1.25rem;
+}
+
+.testimoni-label {
+  margin-left: 0.8rem;
+}
+
+.label-name {
+  font-size: 0.75rem;
+  letter-spacing: 0.05rem;
+}
+
+.label-position {
+  font-size: 0.55rem;
+}
+
+.profile-photo {
+  display: block;
+  width: 2rem;
+  border-radius: 50%;
+  margin-left: 0.3rem;
+}
+
+/* footer styles */
+
+.footnav-menu a:hover,
+.footer-socmed a:hover {
+  color: rgb(108, 151, 253);
+}
+
+.footer-brand {
+  margin-top: -0.25rem;
+}
+
+.footer-brand img {
+  fill: white;
+}
+
+.register {
+  width: 100%;
+  height: 14.55rem;
+  padding: 3.9rem 0;
+  background-color: var(--Desaturated-Blue);
+}
+
+.register-container {
+  display: flex;
+  align-items: center;
+  margin-top: 3.1rem;
+}
+
+.register-content {
+  width: 37rem;
+  color: white;
+}
+
+.register-title {
+  font-size: 2.2rem;
+  line-height: 1.5;
+  letter-spacing: 0.015rem;
+  margin-bottom: 1rem;
+}
+
+.register-text {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.register-form {
+  width: 35.9rem;
+  margin-left: auto;
+}
+
+.register-email {
+  width: 30.5rem;
+  padding: 1.19rem 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.25rem;
+}
+
+.register-button {
+  margin-top: 1.3rem;
+  border: none;
+  outline: none;
+  padding: 1.1rem 2.75rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.01rem;
+  font-size: 0.85rem;
+  background-color: var(--Bright-Blue);
+  border-radius: 0.25rem;
+  color: white;
+}
+
+.register-button:hover {
+  background-color: rgb(107, 155, 255);
+}
+
+.footer-group {
+  height: 24.5rem;
+  background-color: var(--Very-Dark-Blue);
+  color: white;
+  padding-top: 7.8rem;
+}
+
+.footer-brand img {
+  width: 12.1rem;
+}
+
+.footer-group ul {
+  list-style-type: none;
+}
+
+.footer-menu {
+  display: flex;
+  align-items: top;
+  margin-top: 1.75rem;
+}
+
+.phone-text,
+.email-text {
+  font-size: 1.14rem;
+}
+
+.contact-menu {
+  margin-left: 0.2rem;
+  width: 18rem;
+}
+
+.contact-item:last-of-type {
+  margin-top: 1.25rem;
+}
+
+.phone-label,
+.email-label {
+  display: flex;
+  align-items: center;
+}
+
+.phone-icon,
+.email-icon {
+  display: block;
+  margin-right: 1rem;
+}
+
+.footnav-item {
+  margin-left: 6.3rem;
+}
+
+.footer-legal {
+  margin-left: 14rem;
+}
+
+.footer-socmed {
+  margin-left: 12.8rem;
+}
+
+.footnav-link,
+.legal-link,
+.social-link {
+  font-size: 1.1rem;
+}
+
+.footnav-menu,
+.legal-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.social-menu {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.social-item i {
+  display: block;
+}
+
+@media (max-width: 414px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar,
+  .header,
+  .main-container,
+  .register-container,
+  .group-container {
+    width: 85%;
+  }
+
+  .navbar {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+
+  .brand img {
+    width: 5rem;
+  }
+
+  .nav-menu {
+    gap: 1rem;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
+  }
+
+  .header {
+    display: block;
+  }
+
+  .header-image {
+    position: static;
+    width: 20rem;
+  }
+
+  .header-image img {
+    width: 100%;
+  }
+
+  .header-content {
+    width: 20rem;
+    text-align: center;
+  }
+
+  .header-title {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .header-text {
+    width: 100%;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .header-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .button-started {
+    width: 100%;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main::before {
+    background-image: url("../images/bg-curve-mobile.svg");
+    top: -3.2rem;
+  }
+
+  .main-container {
+    display: block;
+    margin: 0 auto;
+    padding-top: 5rem;
+  }
+
+  .main-content {
+    width: 100%;
+    margin-top: 4rem;
+  }
+
+  .main-images {
+    width: 20rem;
+  }
+
+  .image-one {
+    width: 100%;
+    position: static;
+  }
+
+  .main-title {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .main-text p {
+    width: unset;
+  }
+
+  .main-link {
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+
+  .testimoni-box {
+    width: 80%;
+  }
+
+  .testimoni-content {
+    font-size: 0.7rem;
+  }
+
+  .register {
+    padding: 2rem 0 7rem 0;
+    height: unset;
+  }
+
+  .register-container {
+    display: block;
+  }
+
+  .register-content {
+    width: 20rem;
+    text-align: center;
+  }
+
+  .register-title {
+    font-size: 1.3rem;
+  }
+
+  .register-text {
+    font-size: 1rem;
+  }
+
+  .register-form {
+    width: 18rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .register-email {
+    width: unset;
+  }
+
+  .register-button {
+    width: unset;
+    margin-top: -0.75rem;
+  }
+
+  .footer-group {
+    height: unset;
+    padding-top: 3.5rem;
+  }
+
+  .footer-menu {
+    display: block;
+    margin-top: 3rem;
+  }
+
+  .social-socmed {
+    display: flex;
+  }
+
+  .footnav-item,
+  .footer-legal,
+  .footer-socmed {
+    margin-left: 0;
+  }
+
+  .footnav-menu {
+    margin-top: 4rem;
+    gap: 1rem;
+  }
+
+  .legal-menu {
+    margin-top: 3rem;
+    gap: 1rem;
+  }
+
+  .footer-socmed {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+  }
+}
