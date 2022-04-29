@@ -7,140 +7,150 @@
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
   <!-- <link rel="stylesheet" href="./styles/css-reset.css"> -->
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 </head>
 
 <body>
-  <nav class="navbar">
-    <a href="#" class="nav-brand"><img src="./images/logo.svg" alt="logo"></a>
-    <ul class="nav-menu">
-      <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Team</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Sign In</a></li>
+  <nav class="container navbar">
+    <a href="#" class="nav__brand"><img class="nav__logo" src="./images/logo.svg" alt="logo"></a>
+    <ul class="nav__list">
+      <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Team</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Sign In</a></li>
     </ul>
   </nav>
 
-  <header class="header">
-    <div class="header-image">
-      <img class="image-illustration-one" src="./images/illustration-1.svg" alt="illustration-1">
+  <header class="container header">
+
+    <div class="header__image">
+      <img class="illustration__one" src="./images/illustration-1.svg" alt="illustration-1">
     </div>
-    <div class="header-content">
-      <h1 class="header-title">
+
+    <div class="header__content">
+      <h1 class="header__title">
         All your files in one secure location, accessible anywhere.
       </h1>
-      <p class="header-text">Fylo stores your most important files in one secure location.
+      <p class="header__text">Fylo stores your most important files in one secure location.
         Access them wherever you need, share and collaborate with friends,
         family, and co-workers.</p>
 
-      <form class="header-form validate-form" novalidate>
-        <input class="input-email" type="email" placeholder="Enter your email...">
-        <button class="button-started" type="submit">Get
+      <form class="header__form validate__form" novalidate>
+        <input class="input__email" type="email" placeholder="Enter your email...">
+        <button class="btn btn__primary btn__submit" type="submit">Get
           Started</button>
-        <span class="input-info" id="info">Please check your email</span>
+        <span class="input__info" id="info">Please check your email</span>
       </form>
     </div>
+
   </header>
 
   <main class="main">
-    <div class="main-container">
-      <div class="main-images">
-        <img class="image-illustration-two" src="./images/illustration-2.svg" alt="illustration-2">
+    <div class=" container testimonial">
+      <div class="main__images">
+        <img class="illustration__two" src="./images/illustration-2.svg" alt="illustration-2">
       </div>
 
-      <div class="main-content">
-        <h1 class="main-title">Stay productive, wherever you are</h1>
+      <div class="main__content">
+        <h2 class="main__title">Stay productive, wherever you are</h2>
 
-        <div class="main-text">
+        <div class="main__text">
           <p>Never let location be an issue when accessing your files. Fylo has you
             covered for all of your file storage needs.</p>
           <p>Securely share files and folders with friends, family and colleagues for
             live collaboration. No email attachments required!</p>
         </div>
 
-        <a href="#" class="main-link">See how Fylo works</a>
+        <a href="#" class="main__link">See how Fylo works</a>
 
-        <section class="testimoni-box">
-          <img class="testimoni-quotes" src="./images/icon-quotes.svg" alt="icon-quotes">
-          <p class="testimoni-content">Fylo has improved our team productivity by an order of magnitude. Since
+        <section class="testimoni__box">
+          <img class="testimoni__quotes" src="./images/icon-quotes.svg" alt="icon-quotes">
+          <p class="testimoni__content">Fylo has improved our team productivity by an order of magnitude. Since
             making the switch our team has become a well-oiled collaboration machine.</p>
-          <div class="testimoni-profile">
-            <img class="profile-photo" src="./images/avatar-testimonial.jpg" alt="avatar-testimonial">
-            <div class="testimoni-label">
-              <h2 class="label-name">Kyle Burton</h2>
-              <p class="label-position">Founder & CEO, Huddle</p>
+          <div class="testimoni__profile">
+            <img class="profile__photo" src="./images/avatar-testimonial.jpg" alt="avatar-testimonial">
+            <div class="testimoni__label">
+              <h2 class="label__name">Kyle Burton</h2>
+              <p class="label__position">Founder & CEO, Huddle</p>
             </div>
           </div>
         </section>
       </div>
     </div>
   </main>
-  <!-- 
-  <footer class="footer">
-    <section class="register">
-      <div class="register-container">
-        <div class="register-content">
-          <h1 class="register-title">Get early access today</h1>
-          <p class="register-text">It only takes a minute to sign up and our free starter tier is extremely generous.
-            If you have any questions, our support team would be happy to help you.</p>
-        </div>
-        <form class="register-form validate-form" novalidate>
-          <input type="email" class="register-email" placeholder="example@mail.com"><br>
-          <span class="register-info">Please check your email</span>
-          <input type="submit" value="Get Started For Free" class="register-button">
-        </form>
-      </div>
-    </section>
 
-    <section class="footer-group">
-      <div class="group-container">
-        <a href="#" class="footer-brand">
+
+  <section class="register">
+    <div class="container">
+      <div class="register__content">
+        <h2 class="register__title">Get early access today</h2>
+        <p class="register__text">It only takes a minute to sign up and our free starter tier is extremely generous.
+          If you have any questions, our support team would be happy to help you.</p>
+      </div>
+      <form class="register__form validate__form" novalidate>
+        <input type="email" class="register__email" placeholder="example@mail.com"><br>
+        <span class="register__info">Please check your email</span>
+        <input type="submit" value="Get Started For Free" class="btn btn__primary register__button">
+      </form>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <section class="container">
+      <div class="group__container">
+
+        <a href="#" class="footer__brand">
           <img src="./images/logo white.svg" alt="logo">
         </a>
-        <ul class="footer-menu">
-          <li class="footer-contact">
-            <ul class="contact-menu">
-              <li class="contact-item">
-                <span class="phone-label">
-                  <img class='phone-icon' src="./images/icon-phone.svg" alt="icon-phone">
-                  <span class="phone-text">Phone: +1-543-123-4567</span>
+        <ul class="footer__menu">
+          <li class="footer__contact">
+            <ul class="contact__menu">
+              <li class="contact__item">
+                <span class="phone__label">
+                  <img class='phone__icon' src="./images/icon-phone.svg" alt="icon-phone">
+                  <span class="phone__text">Phone: +1-543-123-4567</span>
                 </span>
               </li>
-              <li class="contact-item">
-                <span class="email-label">
-                  <img class='email-icon' src="./images/icon-email.svg" alt="icon-phone">
-                  <span class="email-text">example@fylo.com</span>
+              <li class="contact__item">
+                <span class="email__label">
+                  <img class='email__icon' src="./images/icon-email.svg" alt="icon-phone">
+                  <span class="email__text">example@fylo.com</span>
                 </span>
               </li>
             </ul>
           </li>
-          <li class="footnav-item">
-            <ul class="footnav-menu">
-              <li class="footnav-item"><a href="#" class="footnav-link">About Us</a></li>
-              <li class="footnav-item"><a href="#" class="footnav-link">Jobs</a></li>
-              <li class="footnav-item"><a href="#" class="footnav-link">Press</a></li>
-              <li class="footnav-item"><a href="#" class="footnav-link">Blog</a></li>
+          <li class="footnav">
+            <ul class="footnav__menu">
+              <li class="footnav__item"><a href="#" class="footnav__link">About Us</a></li>
+              <li class="footnav__item"><a href="#" class="footnav__link">Jobs</a></li>
+              <li class="footnav__item"><a href="#" class="footnav__link">Press</a></li>
+              <li class="footnav__item"><a href="#" class="footnav__link">Blog</a></li>
             </ul>
           </li>
-          <li class="footer-legal">
-            <ul class="legal-menu">
-              <li class="legal-item"><a href="#" class="legal-link">Contact Us</a></li>
-              <li class="legal-item"><a href="#" class="legal-link">Terms</a></li>
-              <li class="legal-item"><a href="#" class="legal-link">Privacy</a></li>
+          <li class="footer__legal">
+            <ul class="legal__menu">
+              <li class="legal__item"><a href="#" class="legal__link">Contact Us</a></li>
+              <li class="legal__item"><a href="#" class="legal__link">Terms</a></li>
+              <li class="legal__item"><a href="#" class="legal__link">Privacy</a></li>
             </ul>
           </li>
-          <li class="footer-socmed">
-            <ul class="social-menu">
-              <li class="social-item"><a href="#" class="social-link"><i class="ri-facebook-circle-line ri-2x"></i></a>
+          <li class="footer__socmed">
+            <ul class="social__menu">
+              <li class="social__item"><a href="#" class="social__link"><i
+                    class="ri-facebook-circle-line ri-2x"></i></a>
               </li>
-              <li class="social-item"><a href="#" class="social-link"><i class="ri-instagram-line ri-2x"></i></a></li>
-              <li class="social-item"><a href="#" class="social-link"><i class="ri-twitter-line ri-2x"></i></a></li>
+              <li class="social__item"><a href="#" class="social__link"><i class="ri-instagram-line ri-2x"></i></a></li>
+              <li class="social__item"><a href="#" class="social__link"><i class="ri-twitter-line ri-2x"></i></a></li>
             </ul>
           </li>
         </ul>
+
       </div>
+
     </section>
-  </footer> -->
+  </footer>
 
   <script src="./script/script.js"></script>
 </body>
