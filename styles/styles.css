@@ -754,37 +754,11 @@ input::placeholder {
   .social__link,
   .legal__link {
     font-size: 1.5rem;
-  } 
+  }
 
   .social__menu {
     display: flex;
     justify-content: center;
     gap: 1.25rem;
   }
-  
-  
-  /*
-  .contact__item:last-of-type {
-    margin-top: 2rem;
-  }
-
-  .footnav__item + .footnav__item,
-  .legal__item + .legal__item {
-    margin-top: 1.75rem;
-  }
-
-  .footnav__link,
-  .legal__link {
-    font-size: 1.5rem;
-  }
-
-  .footer__socmed {
-    padding: 5rem 0;
-  }
-
-  .social__menu {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-  } */
 }
