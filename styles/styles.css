@@ -162,12 +162,12 @@ input::placeholder {
 }
 
 .input__info {
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
   color: #dc3545;
 }
 
 .register__info {
-  margin-top: -0.25rem;
+  margin-top: -0.5rem;
   color: #fffd;
 }
 
