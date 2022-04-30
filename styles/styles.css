@@ -605,7 +605,7 @@ input::placeholder {
 }
 
 .register__info {
-  text-align: left;
+  text-align: center;
   display: none;
 }
 
