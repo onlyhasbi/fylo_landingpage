@@ -663,13 +663,13 @@ input::placeholder {
 
 /* --- Footer Section --- */
 
-.footer {
+.footer__navigation {
   background: var(--Very-Dark-Blue);
   color: #fff;
   padding-top: 7rem;
 }
 
-.footer ul {
+.footer__navigation ul {
   list-style-type: none;
 }
 
@@ -725,7 +725,7 @@ input::placeholder {
 }
 
 @media screen and (min-width: 1024px) {
-  .footer {
+  .footer__navigation {
     padding-top: 4rem;
     padding-bottom: 7rem;
   }
