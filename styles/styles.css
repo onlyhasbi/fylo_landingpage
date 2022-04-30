@@ -665,6 +665,7 @@ input::placeholder {
 .footer {
   background: var(--Very-Dark-Blue);
   color: #fff;
+  padding-top: 7rem;
 }
 
 .footer ul {
@@ -679,7 +680,7 @@ input::placeholder {
 
 .footer__brand {
   width: 100%;
-  max-width: 20rem;
+  max-width: 16rem;
 }
 
 .phone__label,
