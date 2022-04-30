@@ -745,23 +745,7 @@
   border: 0.5px solid rgba(0, 0, 0, 0.3);
 }
 
-.invalidated:invalid .input-email,
-.invalidated:invalid .register-email {
-  outline: 1px solid #dc3545;
-}
 
-.invalidated:invalid .input-info,
-.invalidated:invalid .register-info {
-  display: block;
-}
-
-.input-info,
-.register-info {
-  display: none;
-  color: #dc3545;
-  margin-top: 0.25rem;
-  font-size: 0.9rem;
-}
 
 .button-started {
   width: 11.6rem;

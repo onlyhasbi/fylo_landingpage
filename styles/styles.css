@@ -143,6 +143,34 @@ input::placeholder {
   }
 }
 
+/* --- Email Notification --- */
+
+.invalidated:invalid .input__email,
+.invalidated:invalid .register__email {
+  border: 1px solid #dc3545;
+}
+
+.invalidated:invalid .input__info,
+.invalidated:invalid .register__info {
+  display: block;
+}
+
+.input__info,
+.register__info {
+  display: none;
+  font-size: 1.2rem;
+}
+
+.input__info {
+  margin-top: 0.75rem;
+  color: #dc3545;
+}
+
+.register__info {
+  margin-top: -0.25rem;
+  color: #fffd;
+}
+
 /* --- Navbar Section --- */
 
 .navbar {
@@ -248,6 +276,7 @@ input::placeholder {
   .header__form {
     margin-top: 2.5rem;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
   }
 }
@@ -575,9 +604,7 @@ input::placeholder {
 }
 
 .register__info {
-  margin-top: 0.1rem;
-  font-size: 1rem;
-  text-align: center;
+  text-align: left;
   display: none;
 }
 
@@ -617,7 +644,7 @@ input::placeholder {
   }
 
   .register__email {
-    margin: 0 0 0.75rem 0;
+    margin: 0;
     padding: 1.5rem 2rem;
     display: block;
     width: 92%;
@@ -627,7 +654,8 @@ input::placeholder {
     display: block;
     width: 38%;
     padding: 1.5rem 0;
-    margin: 0;
+    margin-left: 0;
+    margin-top: 0.75rem;
     font-weight: 700;
   }
 }
