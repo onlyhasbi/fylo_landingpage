@@ -287,7 +287,7 @@ input::placeholder {
   margin-top: 12rem;
   width: 100%;
   position: relative;
-  /* background: var(--Light-Grayish-Blue); */
+  background: var(--Light-Grayish-Blue);
   padding-top: 6rem;
   padding-bottom: 8rem;
 }
@@ -624,7 +624,6 @@ input::placeholder {
   }
 
   .register__button {
-    /* margin-left: 3.5rem; */
     display: block;
     width: 38%;
     padding: 1.5rem 0;
