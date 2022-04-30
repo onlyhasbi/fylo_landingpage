@@ -167,7 +167,9 @@ input::placeholder {
 }
 
 .register__info {
+  text-align: center;
   margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
   color: #fffd;
 }
 
@@ -292,10 +294,6 @@ input::placeholder {
   width: 100%;
   margin-top: 1.5rem;
   font-weight: 700;
-}
-
-.input__info {
-  display: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -602,11 +600,6 @@ input::placeholder {
   display: block;
   width: 75%;
   margin: 0 auto;
-}
-
-.register__info {
-  text-align: center;
-  display: none;
 }
 
 .register__button {
